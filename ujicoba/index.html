@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #a8dadc, #457b9d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            width: 350px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .login-container img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+        .login-container h2 {
+            color: #457b9d;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .login-container a {
+            color: #457b9d;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+        .login-container button {
+            background-color: #457b9d;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .login-container button:hover {
+            background-color: #1d3557;
+        }
+        .show-password {
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .show-password input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <img src="https://media-hosting.imagekit.io//ccb67aeacb67411c/WhatsApp%20Image%202025-01-30%20at%2009.08.15%20(1).jpeg?Expires=1832811021&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=eMRRmNHnRLi5fMZ~OnRFW4hqXt3Mo-Q~GmE3hcC0693X4Ap-kmTEN0G4BDUF37MC9b3QNd6URLJzGr4drt0HUVzVCd3i82~-5OSTAu1ppyuacnOfB7~vsAhsuvHN5VOUZrG5vpuBepqzwWnpmIq8PT3Vaiyqh-Kqli8s4L6LVhozKUfhe4vGdPEV4jtNhHcaYx9gZIeWlvvo2-yU6DOs0-8MqgQhU-hjFX8WZ37TF6oOVG1LmJXJlfi-YkRd~Sg3JtNOTdalX~IRm7pTkqIleLZ1v3RqCgsW-f6JNvCAB3paWDJIgL6ZkqwOqydiCrBtkTQWHHyIG1bT2fTLZ6kSiw__" alt="User Image">
+        <h2>Log In</h2>
+        <form action="home.html" method="post">
+            <input type="text" name="robben" placeholder="Username" required>
+            <input type="password" name="janedoe" id="password" placeholder="Password" required>
+            <div class="show-password">
+                <input type="checkbox" id="show-password" onclick="togglePassword()">
+                <label for="show-password">Show Password</label>
+            </div>
+            <div>
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+                <a href="#" style="float: right;">Forgot password?</a>
+            </div>
+            <button type="submit">Log in</button>
+        <h4>free id and password
+            (id : robben , 
+            pw : janedoe)
+        </h4>
+        <h4>silahkan masuk menggunakan id dan pw itu</h4>
+        </form>
+    </div>
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+    </script>
+</body>
+</html>

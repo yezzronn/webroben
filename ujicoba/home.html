@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ff1493);
+            color: #ff1493;
+        }
+
+        .header {
+            background-color: #ff1493;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #ff1493;
+            text-shadow: 2px 2px 4px #ff1493;
+        }
+
+        .album {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .album-item {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .album-item-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .album-item-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .album-item-grid p {
+            font-size: 14px;
+            text-align: center;
+            color: #ff1493;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff1493;
+            color: white;
+            font-size: 14px;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Kata Wielino : My Kisah</h1>
+        <div class="album">
+            <div class="album-item">
+                <div class="album-item-grid">
+                    <div>
+                        <img src="https://media-hosting.imagekit.io//c68bdf84df7c4915/WhatsApp%20Image%202025-01-30%20at%2009.32.06.jpeg?Expires=1832813386&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=YpNWlwNhrf1JuRrHp-Pp7lEuAw8wPFVftzkK~ugfipgjtzVnKnpWqO9jWxGK0Dp4OzLsDN1wvviesmlA35LVnYpLk93TwIarl2V4vk39HBtBHwUEcepq9vVW02UvqnEvFRK1ZJSObf4EVI-yNdT6zHnm9ww6y8c-bsPGOgrN5oOqLxRqNZNV-iinxIv22wB9vWuxlQS5d0N3G6-LTCpQYxI0rKnwbVYRaNswLLycGfj3z~-MdTzJ0Iv5biHY2njPFuFi1Hfh8uJV5IGqQFnjvePr0SZ~8G2OIaSNvsX5idjP5Jo3Nh9VLNKZF3ZxMHZzXUAw8w3zfiqnEYURCwIFog__" alt="Kucing Lucu">
+                        <p>Eguchi</p>
+                    </div>
+                    <div>
+                        <img src="https://media-hosting.imagekit.io//ccb67aeacb67411c/WhatsApp%20Image%202025-01-30%20at%2009.08.15%20(1).jpeg?Expires=1832811021&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=eMRRmNHnRLi5fMZ~OnRFW4hqXt3Mo-Q~GmE3hcC0693X4Ap-kmTEN0G4BDUF37MC9b3QNd6URLJzGr4drt0HUVzVCd3i82~-5OSTAu1ppyuacnOfB7~vsAhsuvHN5VOUZrG5vpuBepqzwWnpmIq8PT3Vaiyqh-Kqli8s4L6LVhozKUfhe4vGdPEV4jtNhHcaYx9gZIeWlvvo2-yU6DOs0-8MqgQhU-hjFX8WZ37TF6oOVG1LmJXJlfi-YkRd~Sg3JtNOTdalX~IRm7pTkqIleLZ1v3RqCgsW-f6JNvCAB3paWDJIgL6ZkqwOqydiCrBtkTQWHHyIG1bT2fTLZ6kSiw__" alt="Anjing Lucu">
+                        <p>Eguchi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="album-item-grid">
+                    <div>
+                        <img src="https://media-hosting.imagekit.io//598a37769e0d44da/WhatsApp%20Image%202025-01-30%20at%2009.32.07.jpeg?Expires=1832813386&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=o551XGRYCsSkveuiiajZzMaRIHK81rRW6a390dFJNYLlWl7NW7BPP8ZTPJ8bYfkANeQbkYoSw5EZFxGtUGAE51joxbf8WgNxTZZwc3GT588TmiD2CeR4jQyyhWrgZ8~Z56~vJtdc4~78hUAJ-1MZ~hNeJ6YMQc18rFO02gmtaBFQWBwcvcrMAQ81R0dLcmDE2FN8SodhYr1ePcK9EVZe~NedTW-RegS7qrMF0O7SuK5vbJSFtAnHzG91gnvaH8O1yJRja0jILzulkKOt453kZuFYUAY32wu8YY-MG~DfoCpzP6v5hCWveodyIKObQmIq5mFjnYn2h2jLwzYY2sz5Dg__" alt="Panda Lucu">
+                        <p>Waguri</p>
+                    </div>
+                    <div>
+                        <img src="https://media-hosting.imagekit.io//c51758aa82f34196/WhatsApp%20Image%202025-01-30%20at%2009.32.07%20(1).jpeg?Expires=1832813386&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=bPGIrc1jWUwZyqbEr1FFWTgpEOkTKpSRgs4v6k0f1j9PdcE-GYp5WkkPPNq5chHJYlaNEf~ElOapj-kcxTHg7k1vpNyT9AGEf-gmYyEX05nIPHdR~acvVLgtEokfSkkOZdlz8V0o8fG-7UHoDTtzgnyzIwUxgaOEP-0G5V1eg4MC2W4EDviU5LeHslDV6DGQQyIkbB~NeeJFszKU9UHmq0mPNFDr-ocNCYp--Ey0dJwWtPQrrBKzvZK7MXZWIY0CmJGhqC~fbP~k9Ef075pMgreWXBP7nYFiJHzN7yj8TgEMw201MIP1NCqW9uFE-~b1QJ1VnXh7vUbpCfiIWpywYQ__" alt="Kelinci Lucu">
+                        <p>Waguri</p>
+                    </div>
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="album-item-grid">
+                    <div>
+                        <img src="https://media-hosting.imagekit.io//e582e241842945c3/WhatsApp%20Image%202025-01-30%20at%2009.33.07.jpeg?Expires=1832813433&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nLOcWZtpuW32inhSQGUnLWS25Mc0RumXXLQcBlKHFr-Zc-AVzq33viA2uvN8PbMtZrMaeHQkBMbG-r3ZnYM3UErSHZPl2t~US203Bk2QajdjEf~G~qbiPEwLwanUyxQHcZdtyihIpkrBAeamFmFsbVZT66~QiI~-xcNGKrMSM-9Fo1MyxdsOdyg4WzwCpyhFopOjNjqGW2C7A7hRM5-LRuTBEWP7G2EOtgR~ICyc2xK1wf8dtJLN5Ji9j7vs4awfqlcuuACGE6EetLRTCI8TXhBewUmvzzvIFjgW8WCzs3QovmUPSzI5X3vxgW1wrZzyY3Ypeu0oCMlLuW3c8dm7gQ__" alt="Burung Lucu">
+                        <p>Jane Doe</p>
+                    </div>
+                    <div>
+                        <img src="https://media-hosting.imagekit.io//1aa1a2aa8bb44200/WhatsApp%20Image%202025-01-30%20at%2009.56.47.jpeg?Expires=1832813836&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zxiPCf3IRifjSKlQ~HCX4fE1xiLzRzXjsmc2cMNJWpbeXOxGqsEBtUEjZcdwLwizt~1As3DmLWvPV2vlUZQXxp4qmebXYfe9~9-GBFTVypYzIhopVEP5qtXbGc~pahKGSL-9yvQDNSCwi3XnwRkX5oE0nHuS7GVs3xdEEnyltNjN9xxoPV252Qs~cE~NtrKdIAZXphF7tHDS98A3aGvZzqu2~OWliwd5RAiYyQ7SFTVTPeKHbG9vAecKFyd3aWh08F~uhQsVBvqrSa7jujvcwhbyDVWHf9g6LzYVvx8hhxkT08VzvD0zkGg3RgKGAUnef~kdDpilAj1V-wm5b8jA7w__" alt="Koala Lucu">
+                        <p>Jane Doe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
